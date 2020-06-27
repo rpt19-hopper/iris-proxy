@@ -19,3 +19,9 @@ app.get('/listing/:productNumber', (req, res) => {
     root: path.join(__dirname, '/../client/dist'),
   });
 });
+
+app.get('/loaderio-858d7b65fcecbf72881840fa6b65813d', (req, res) => {
+  res.sendFile('loaderio-858d7b65fcecbf72881840fa6b65813d.txt', {
+    root: path.join(__dirname, '/../client/dist'),
+  });
+})
